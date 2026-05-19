@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Vitamin K Refusal — Preparing for the Conversation</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#005EB8;--dk:#003087;--lt:#41B6E6;--dark:#0F1B2D;--txt:#1A1A2E;--t2:#4A5568;--bg:#F0F4F8;--teal:#00A499;--warm:#ED8B00;--red:#DA291C;--bdr:#E2E8F0}
+body{font-family:'DM Sans',sans-serif;background:var(--dark);overflow:hidden;height:100vh;width:100vw}
+.deck{position:relative;width:100%;height:100vh}
+.s{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:5vh 7vw;opacity:0;transform:translateX(50px);transition:opacity .4s,transform .4s;pointer-events:none;overflow-y:auto}
+.s.on{opacity:1;transform:none;pointer-events:auto}.s.out{opacity:0;transform:translateX(-50px)}
+.bg-d{background:var(--dark);color:#E2E8F0}.bg-b{background:linear-gradient(135deg,var(--blue),var(--dk));color:#fff}
+.bg-l{background:var(--bg);color:var(--txt)}.bg-w{background:#fff;color:var(--txt)}
+.bg-t{background:linear-gradient(135deg,var(--teal),#007A6E);color:#fff}
+.bg-r{background:linear-gradient(135deg,var(--red),#A51E14);color:#fff}
+.bg-warm{background:linear-gradient(135deg,var(--warm),#C77400);color:#fff}
+.lb{font-size:clamp(9px,1vw,12px);font-weight:700;text-transform:uppercase;letter-spacing:3px;margin-bottom:1.2vh;opacity:.6}
+.ti{font-family:'Fraunces',serif;font-size:clamp(24px,3.8vw,52px);font-weight:800;line-height:1.1;margin-bottom:2.5vh}
+.ti-s{font-family:'Fraunces',serif;font-size:clamp(20px,2.8vw,38px);font-weight:800;line-height:1.15;margin-bottom:2vh}
+.su{font-size:clamp(14px,1.6vw,20px);font-weight:500;margin-bottom:1.5vh;opacity:.8}
+.bd{font-size:clamp(13px,1.25vw,17px);line-height:1.6;max-width:860px;opacity:.88}
+.bd+.bd{margin-top:1.8vh}
+.bd b,.bd strong{font-weight:700}
+.sm{font-size:clamp(10px,1vw,13px);line-height:1.5;opacity:.55;margin-top:2vh}
+.ref{font-size:clamp(9px,.85vw,11px);opacity:.4;margin-top:1.5vh;line-height:1.8}
+/* Stats */
+.sts{display:flex;gap:2vw;margin:3vh 0;flex-wrap:wrap}
+.st{text-align:center;padding:2.5vh 2vw;background:rgba(255,255,255,.06);border-radius:12px;min-width:130px;flex:1}
+.bg-l .st,.bg-w .st{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.st b{display:block;font-family:'Fraunces',serif;font-size:clamp(30px,4vw,50px);font-weight:800;line-height:1;color:var(--lt)}
+.bg-l .st b,.bg-w .st b{color:var(--blue)}
+.st span{font-size:clamp(9px,.95vw,13px);margin-top:.8vh;display:block;opacity:.65}
+/* Table */
+.tb{width:100%;max-width:940px;border-collapse:collapse;margin:2vh 0;font-size:clamp(10px,1.05vw,14px)}
+.tb th{background:var(--blue);color:#fff;padding:8px 12px;text-align:left;font-weight:600;font-size:clamp(9px,1vw,12px)}
+.tb td{padding:8px 12px;border-bottom:1px solid var(--bdr);vertical-align:top;line-height:1.45;background:#fff}
+.tb tr:nth-child(even) td{background:#F7FAFC}
+.tg{padding:2px 7px;border-radius:4px;font-weight:600;font-size:.85em;white-space:nowrap}
+.tg-g{color:#22543D;background:#C6F6D5}.tg-r{color:#822727;background:#FED7D7}
+.tg-p{color:#44337A;background:#E9D8FD}.tg-bl{color:#2A4365;background:#BEE3F8}
+.tg-w{color:#7B341E;background:#FEEBC8}.tg-k{color:#702459;background:#FED7E2}
+/* Alert / Quote */
+.al{border-left:4px solid var(--red);background:rgba(218,41,28,.07);padding:1.5vh 2vw;border-radius:0 8px 8px 0;margin:2vh 0;max-width:860px}
+.al p{font-weight:600;color:var(--red);font-size:clamp(11px,1.15vw,16px);line-height:1.5}
+.qt{border-left:4px solid var(--blue);background:rgba(0,94,184,.06);padding:1.5vh 2vw;border-radius:0 8px 8px 0;margin:2vh 0;max-width:860px;font-style:italic;font-weight:600;color:var(--dk);font-size:clamp(12px,1.2vw,17px);line-height:1.5}
+/* ERI */
+.eri{margin:2.5vh 0;max-width:860px}
+.er{display:flex;align-items:flex-start;gap:14px;margin-bottom:2vh}
+.en{width:40px;height:40px;min-width:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:18px;font-weight:800;color:#fff}
+.eh{font-size:clamp(14px,1.4vw,19px);font-weight:700;margin-bottom:2px}
+.ed{font-size:clamp(11px,1.05vw,15px);color:var(--t2);line-height:1.5}
+.ee{font-size:clamp(10px,.95vw,13px);font-style:italic;color:var(--blue);margin-top:3px;padding-left:10px;border-left:2px solid var(--lt)}
+/* Timeline */
+.tl{margin:2.5vh 0;max-width:860px;padding-left:20px;position:relative}
+.tl::before{content:'';position:absolute;left:5px;top:5px;bottom:5px;width:3px;background:var(--lt);border-radius:2px}
+.ti-i{position:relative;margin-bottom:2vh;padding-left:16px}
+.ti-i::before{content:'';position:absolute;left:-18px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--blue)}
+.ti-i.rd::before{background:var(--red)}
+.ty{font-weight:700;font-size:clamp(11px,1.1vw,15px);color:var(--blue)}
+.ti-i.rd .ty{color:var(--red)}
+.tt{font-size:clamp(10px,.95vw,14px);color:var(--t2);line-height:1.45}
+.tc{background:var(--bg);padding:8px 14px;border-radius:8px;font-weight:600;color:var(--teal);font-size:clamp(11px,1.1vw,15px);margin-top:2vh}
+/* Ingredients */
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:2vh 0;max-width:860px}
+.ig-i{background:var(--bg);border-radius:8px;padding:14px 16px}
+.bg-d .ig-i{background:rgba(255,255,255,.05)}
+.ig-i h4{font-size:clamp(11px,1.1vw,15px);font-weight:700;color:var(--blue);margin-bottom:3px}
+.bg-d .ig-i h4{color:var(--lt)}
+.ig-i p{font-size:clamp(10px,.95vw,13px);color:var(--t2);line-height:1.4}
+/* Challenges */
+.ch{margin:2vh 0;max-width:860px}
+.ch-i{display:flex;gap:12px;margin-bottom:1.5vh;align-items:flex-start}
+.ch-t{font-size:clamp(11px,1.1vw,15px);font-weight:700;color:var(--lt);min-width:140px}
+.ch-d{font-size:clamp(11px,1.05vw,14px);font-style:italic;opacity:.7;line-height:1.4}
+/* Conclusion */
+.cn li{padding:1vh 0;font-size:clamp(12px,1.2vw,16px);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.08);list-style:none}
+.cn li::before{content:'→ ';color:var(--lt);font-weight:700}
+/* Roots grid */
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:2vh 0;max-width:860px}
+.rg-i{padding:10px 14px;border-radius:8px;border-left:4px solid}
+.rg-i h4{font-size:clamp(10px,1vw,13px);font-weight:700;margin-bottom:2px}
+.rg-i p{font-size:clamp(9px,.85vw,12px);line-height:1.4;opacity:.75}
+/* When conversation fails */
+.wc{margin:2vh 0;max-width:860px}
+.wc-i{display:flex;gap:14px;margin-bottom:2vh;align-items:flex-start}
+.wc-n{font-size:clamp(13px,1.3vw,17px);font-weight:700;min-width:160px}
+.wc-d{font-size:clamp(11px,1.1vw,15px);line-height:1.5;opacity:.85}
+/* Nav */
+.nav{position:fixed;bottom:2.5vh;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;z-index:100;background:rgba(15,27,45,.88);backdrop-filter:blur(10px);padding:8px 20px;border-radius:36px}
+.nav button{background:none;border:2px solid rgba(255,255,255,.3);color:#fff;width:36px;height:36px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.nav button:hover{background:var(--blue);border-color:var(--blue)}
+.nav button:disabled{opacity:.2;cursor:default}.nav button:disabled:hover{background:none;border-color:rgba(255,255,255,.3)}
+.ctr{color:rgba(255,255,255,.5);font-size:12px;font-weight:600;min-width:55px;text-align:center}
+.prg{position:fixed;top:0;left:0;height:3px;background:var(--lt);transition:width .35s;z-index:101}
+@media(max-width:700px){.s{padding:3.5vh 5vw}.ig,.rg{grid-template-columns:1fr}.sts{flex-direction:column;gap:10px}.tb{font-size:10px}.tb th,.tb td{padding:6px 7px}}
+</style>
+</head>
+<body>
+<div class="prg" id="prg"></div>
+<div class="deck" id="deck">
+
+<!-- 1: TITLE -->
+<div class="s bg-d on" data-i="0">
+<div class="lb">Quality Improvement Project</div>
+<div class="ti">Vitamin K Refusal</div>
+<div class="su" style="color:var(--lt)">Preparing for the Conversation</div>
+<div class="bd" style="opacity:.65;margin-top:2vh">
+<strong>Presenter:</strong> Muhammad Mamun<br>
+<strong>Supervisor:</strong> Dr Victoria Nesbitt<br>
+Paediatric Department · Ormskirk District General Hospital<br>
+Mersey and West Lancashire Teaching Hospitals NHS Trust
+</div>
+</div>
+
+<!-- 2: PRE-INTERVENTION SURVEY -->
+<div class="s bg-d" data-i="1">
+<div class="lb">Pre-Intervention Survey · n = 12</div>
+<div class="ti">Survey Results</div>
+<div class="sts">
+<div class="st"><b>83%</b><span>encounter vitamin K refusal at least weekly or monthly</span></div>
+</div>
+<div class="bd">Q1: Respondent Grade · Q2: How Often Do You Encounter Refusal?</div>
+</div>
+
+<!-- 3: CONFIDENCE GAP -->
+<div class="s bg-d" data-i="2">
+<div class="lb">The Gap</div>
+<div class="ti-s">Even confident clinicians find these conversations difficult</div>
+<div class="sts">
+<div class="st"><b>75%</b><span>rate themselves as confident (4–5/5)</span></div>
+<div class="st"><b>50%</b><span>admit they've felt unprepared or unable to adequately respond</span></div>
+<div class="st"><b>92%</b><span>said a reference guide would help</span></div>
+</div>
+</div>
+
+<!-- 4: CHALLENGES -->
+<div class="s bg-d" data-i="3">
+<div class="lb">Qualitative Findings</div>
+<div class="ti-s">What else is challenging about these conversations?</div>
+<div class="ch">
+<div class="ch-i"><div class="ch-t">Staff knowledge gap</div><div class="ch-d">"Some midwives believe that oral vitamin K is equally effective as IM"</div></div>
+<div class="ch-i"><div class="ch-t">Entrenched refusal</div><div class="ch-d">"Parents just deny vitamin K even after explaining everything"</div></div>
+<div class="ch-i"><div class="ch-t">Materials not working</div><div class="ch-d">"Most parents don't agree with the leaflets and explanation given"</div></div>
+<div class="ch-i"><div class="ch-t">Religious concerns</div><div class="ch-d">"How to make sure the preparation we are using is halal or not"</div></div>
+<div class="ch-i"><div class="ch-t">Competing sources</div><div class="ch-d">"Challenging social media misinformation, even if you give families the correct info"</div></div>
+<div class="ch-i"><div class="ch-t">Trust deficit</div><div class="ch-d">"They believe social media more than the medical stuff"</div></div>
+<div class="ch-i"><div class="ch-t">Emotional burden</div><div class="ch-d">"It can feel confrontational and uncomfortable having these discussions"</div></div>
+</div>
+</div>
+
+<!-- 5: VKDB -->
+<div class="s bg-w" data-i="4">
+<div class="lb">Clinical Evidence</div>
+<div class="ti-s">Vitamin K Deficiency Bleeding (VKDB)</div>
+<table class="tb">
+<thead><tr><th>Type</th><th>Timing</th><th>Without prophylaxis</th><th>Population at risk</th><th>With IM</th><th>Presentation</th></tr></thead>
+<tbody>
+<tr><td><strong>Early</strong></td><td>&lt; 24 hrs</td><td>6–12% of at-risk</td><td>Mothers on anticonvulsants, warfarin, rifampicin, isoniazid</td><td>Effectively prevented</td><td>ICH, intrathoracic, intra-abdominal</td></tr>
+<tr><td><strong>Classic</strong></td><td>1–7 days</td><td>0.25–1.7%</td><td>All newborns without vitamin K (esp. breastfed)</td><td>Virtually eliminated</td><td>Umbilical, GI, skin, circumcision</td></tr>
+<tr><td><strong>Late</strong></td><td>2 wks – 6 mo</td><td>4–7 per 100,000</td><td>Exclusively breastfed without prophylaxis; cholestasis</td><td>0.24–0.44 per 100,000 (idiopathic); up to 3.2 per 100,000 (cholestasis)</td><td>ICH (&gt;50%), 20% mortality</td></tr>
+</tbody>
+</table>
+<div class="al"><p>Late VKDB: ~20% mortality · ~50% intracranial haemorrhage · significant long-term disability.<br>Without prophylaxis, infants are 81× more likely to develop late VKDB (CDC, 2025).</p></div>
+<div class="ref">Sutor AH et al. Thromb Haemost. 1999;81:456-61 · Hand I et al. Pediatrics. 2022;149(3)</div>
+</div>
+
+<!-- 6: WHY DEFICIENT -->
+<div class="s bg-l" data-i="5">
+<div class="lb">Background</div>
+<div class="ti-s">Why Are Newborns Vitamin K Deficient?</div>
+<div class="ig">
+<div class="ig-i"><h4>Poor Placental Transfer</h4><p>Vitamin K does not cross the placenta efficiently. Cord blood levels are barely detectable regardless of maternal intake.</p></div>
+<div class="ig-i"><h4>Low Breast Milk Content</h4><p>Breast milk: 1–4 µg/L. Formula: 50–60 µg/L (15–60× more).</p></div>
+<div class="ig-i"><h4>Sterile Gut</h4><p>Newborns lack intestinal bacteria that synthesise vitamin K₂. Colonisation takes weeks to months.</p></div>
+<div class="ig-i"><h4>Limited Stores</h4><p>Neonatal liver vitamin K stores are extremely low. Half-life in neonatal plasma ≈ 70 hours.</p></div>
+</div>
+<div class="ref">Shearer MJ. Blood Rev. 2009;23(2):49-59 · Lippi G & Franchini M. Blood Transfus. 2011;9(1):4-9</div>
+</div>
+
+<!-- 7: KONAKION MM -->
+<div class="s bg-l" data-i="6">
+<div class="lb">UK Formulation</div>
+<div class="ti-s">Konakion MM Paediatric</div>
+<div class="bd">Phytomenadione 2 mg/0.2 mL · IM: 1 mg at birth (single dose) · Oral: 2 mg at birth, 4–7 days, 1 month (breastfed)</div>
+<div class="bd"><strong>"MM" = Mixed Micelles.</strong> Developed by Roche in 1995 to replace the Cremophor EL-based formulation. Uses natural bile salt + lecithin to dissolve fat-soluble vitamin K in water, specifically designed to reduce anaphylaxis risk.</div>
+<div class="bd">Postmarketing surveillance (Pereira 1998): 85 anaphylactoid reactions (6 fatal) with old formulation vs 1 non-fatal with Konakion MM, across ~1.3 billion treated.</div>
+<div class="ref">Pereira SP et al. Pharmacoepidemiol Drug Saf. 1998;7(3):173-82 · Tripp JH & McNinch AW. Arch Dis Child. 2007;92:F759-66</div>
+</div>
+
+<!-- 8: INGREDIENTS -->
+<div class="s bg-w" data-i="7">
+<div class="lb">UK Formulation</div>
+<div class="ti-s">Ingredients Explained</div>
+<div class="ig">
+<div class="ig-i"><h4>Phytomenadione (Vitamin K₁)</h4><p>The active ingredient. Identical to naturally occurring vitamin K₁ found in green leafy vegetables.</p></div>
+<div class="ig-i"><h4>Glycocholic acid</h4><p>A naturally occurring bile salt. Your baby's body produces this. Used as emulsifier. Produced synthetically.</p></div>
+<div class="ig-i"><h4>Lecithin</h4><p>A phospholipid found in egg yolks and soya. The other half of the mixed micelle system. Present in everyday foods.</p></div>
+<div class="ig-i"><h4>Sodium hydroxide / Hydrochloric acid</h4><p>pH adjustment only. Present in trace amounts. Your stomach produces HCl naturally.</p></div>
+</div>
+<div class="ig" style="grid-template-columns:1fr"><div class="ig-i"><h4>Water</h4><p>For injection.</p></div></div>
+</div>
+
+<!-- 9: UK vs US -->
+<div class="s bg-w" data-i="8">
+<div class="lb">Key Comparison</div>
+<div class="ti-s">UK vs US Formulations</div>
+<div class="bd">Most parental concerns originate from US product information.</div>
+<table class="tb">
+<thead><tr><th>Feature</th><th>UK — Konakion MM</th><th>US (Preserved) — AquaMEPHYTON</th><th>US (Preserv.-free) — Amphastar</th></tr></thead>
+<tbody>
+<tr><td><strong>Solubiliser</strong></td><td>Glycocholic acid + Lecithin</td><td>Polyoxyethylated fatty acid derivative</td><td>Polysorbate 80</td></tr>
+<tr><td><strong>Preservative</strong></td><td><span class="tg tg-g">None</span></td><td><span class="tg tg-r">Benzyl alcohol (9 mg/mL)</span></td><td><span class="tg tg-g">None</span></td></tr>
+<tr><td><strong>Propylene glycol</strong></td><td><span class="tg tg-g">No</span></td><td><span class="tg tg-g">No</span></td><td><span class="tg tg-r">Yes (10.4 mg/0.5 mL)</span></td></tr>
+<tr><td><strong>FDA Black Box</strong></td><td><span class="tg tg-g">No</span></td><td><span class="tg tg-r">Yes</span></td><td><span class="tg tg-r">Yes</span></td></tr>
+<tr><td><strong>Aluminium warning</strong></td><td><span class="tg tg-g">No</span></td><td><span class="tg tg-r">Yes</span></td><td><span class="tg tg-g">No</span></td></tr>
+<tr><td><strong>Oral use from same ampoule</strong></td><td><span class="tg tg-g">Yes</span></td><td><span class="tg tg-r">No</span></td><td><span class="tg tg-r">No</span></td></tr>
+</tbody>
+</table>
+<div class="qt">"The ingredients you've read about online are from the American formulation."</div>
+</div>
+
+<!-- 10: GOLDING STUDY -->
+<div class="s bg-w" data-i="9">
+<div class="lb">Debunking</div>
+<div class="ti-s">"Vitamin K Causes Leukaemia" — The Original Study</div>
+<div class="bd"><strong>Golding et al. 1992 (BMJ):</strong> Case-control study, 2 Bristol hospitals. 195 cases vs 558 controls. Reported ~2× leukaemia risk with IM vitamin K (OR 1.97, 95% CI 1.3–3.0). Caused widespread alarm and policy changes across the UK.</div>
+<div class="bd" style="margin-top:2vh"><strong>Methodological problems identified:</strong></div>
+<div class="bd">1. Small sample from only 2 hospitals, limited generalisability<br>
+2. Vitamin K exposure often assumed, not documented — data clerks used the nearest baby's record or asked staff to recall policy from years earlier<br>
+3. Data collectors not blinded to case/control status<br>
+4. Only ~50% of eligible cases included<br>
+5. Pooled analysis OR dropped to 1.06 when Bristol data excluded</div>
+<div class="ref">Golding J et al. BMJ. 1992;305:341-6 · Roman E et al. Br J Cancer. 2002;86:63-9</div>
+</div>
+
+<!-- 11: SUBSEQUENT EVIDENCE -->
+<div class="s bg-l" data-i="10">
+<div class="lb">Debunking</div>
+<div class="ti-s">The Cancer Link: Subsequent Evidence</div>
+<div class="bd">Every major follow-up study failed to confirm Golding's findings.</div>
+<div class="tl">
+<div class="ti-i rd"><div class="ty">1992 — Golding et al. (BMJ) · 195 cases</div><div class="tt">The original study. Methodological problems identified.</div></div>
+<div class="ti-i"><div class="ty">1993 — Sweden (Ekelund) · 1,384,424 infants</div><div class="tt">OR 1.01 all cancers, 0.90 leukaemia. No association.</div></div>
+<div class="ti-i"><div class="ty">1993 — USA (Klebanoff, NEJM) · 54,795</div><div class="tt">No increased risk. US incidence unchanged 1948–1980 despite near-universal adoption.</div></div>
+<div class="ti-i"><div class="ty">1996 — Germany (von Kries) · 272 cases</div><div class="tt">Population-based case-control in Lower Saxony. No association.</div></div>
+<div class="ti-i"><div class="ty">2002 — Pooled analysis (Roman) · 2,431 cases, 6,338 controls</div><div class="tt">OR 1.06 when Bristol excluded. No convincing evidence.</div></div>
+<div class="ti-i"><div class="ty">2003 — UK Childhood Cancer Study · 2,530 cases, 4,487 controls</div><div class="tt">National study. No association between IM vitamin K and leukaemia or any cancer.</div></div>
+</div>
+<div class="tc">A concerning signal was investigated thoroughly and not confirmed.</div>
+</div>
+
+<!-- 12: BREAST MILK / CORD CLAMPING -->
+<div class="s bg-d" data-i="11">
+<div class="lb">Debunking</div>
+<div class="ti-s">"Breast Milk / Cord Clamping / Diet Can Replace It"</div>
+<div class="bd"><strong>"Breast milk is enough"</strong> — Breast milk: 1–4 µg/L. Formula: 50–60 µg/L. 87.7% of VKDB cases in Japanese surveillance were exclusively breastfed. Colostrum is not rich in vitamin K.</div>
+<div class="bd"><strong>"Delayed cord clamping"</strong> — Beneficial for iron and haemoglobin. Not beneficial for vitamin K. Vitamin K is barely detectable in cord blood. DCC gives more blood, but it's still vitamin K-deficient.</div>
+<div class="bd"><strong>"Maternal diet"</strong> — Systematic review (6 RCTs, >21,000 women): no difference in newborn bleeding. Maternal 5 mg/day (800% RDA) raises infant levels only to near formula-fed. Vitamin K doesn't cross the placenta efficiently.</div>
+<div class="bd" style="color:var(--lt);font-weight:600;margin-top:2vh">All three are good practices. None replaces vitamin K prophylaxis. They address different problems.</div>
+</div>
+
+<!-- 13: ORAL vs IM -->
+<div class="s bg-w" data-i="12">
+<div class="lb">Clinical Evidence</div>
+<div class="ti-s">Oral vs IM: International Evidence</div>
+<table class="tb">
+<thead><tr><th>Country / Regimen</th><th>Late VKDB per 100,000</th><th>Key finding</th></tr></thead>
+<tbody>
+<tr><td><strong>Australia</strong> (IM 1 mg)</td><td>0</td><td>Zero cases during IM surveillance</td></tr>
+<tr><td><strong>Germany</strong> (3 × 2 mg oral)</td><td>0.4–0.8</td><td>Improved but not eliminated</td></tr>
+<tr><td><strong>Switzerland</strong> (2 × 2 mg oral)</td><td>2.31</td><td>Led to addition of third dose</td></tr>
+<tr><td><strong>Switzerland</strong> (3 × 2 mg oral)</td><td>0.87</td><td>All late cases: cholestasis or refusal</td></tr>
+</tbody>
+</table>
+<div class="bd" style="margin-top:2vh"><strong>IM is gold standard. Oral is a reasonable alternative if IM is declined.</strong></div>
+<div class="al"><p>Critical failure point: babies with undiagnosed cholestasis cannot absorb oral vitamin K.</p></div>
+</div>
+
+<!-- 14: DOSE CLAIM -->
+<div class="s bg-l" data-i="13">
+<div class="lb">Debunking</div>
+<div class="ti-s">"The Dose is 20,000 Times What an Adult Needs"</div>
+<div class="bd"><strong>The claim:</strong> Parents compare the 1 mg neonatal dose to the adult Adequate Intake (~90 µg/day) on a per-kilogram basis, arriving at dramatic multiples. This conflates dietary reference intake with a therapeutic dose.</div>
+<div class="bd"><strong>The evidence:</strong></div>
+<div class="bd">• No established Tolerable Upper Intake Level for vitamin K₁ (IOM: insufficient evidence of toxicity at any studied dose)<br>
+• Hyperbilirubinaemia observed only at doses of 25–30 mg (25–30× the prophylactic dose)<br>
+• The dose is high relative to dietary intake, but the therapeutic window is wide and safety data spans 60+ years.</div>
+</div>
+
+<!-- 15: WHY FACTS DON'T WORK + 11 ROOTS -->
+<div class="s bg-b" data-i="14">
+<div class="lb">The Communication Problem</div>
+<div class="ti-s">Why Facts Alone Don't Work</div>
+<div class="bd" style="color:rgba(255,255,255,.9)">Correcting misinformation with facts can paradoxically increase resistance. Nyhan et al. (2014): debunking the autism–vaccine link may actually <em>decrease</em> intent to vaccinate.</div>
+<div class="bd" style="color:rgba(255,255,255,.9)">The JITSUVAX framework identifies <strong>11 attitude roots</strong> from 152 studies and 2,414 anti-vaccination arguments. Surface claims are symptoms — address the root, not just the symptom.</div>
+<div class="rg" style="margin-top:2vh">
+<div class="rg-i" style="border-color:var(--red);background:rgba(255,255,255,.08)"><h4 style="color:#FEB2B2">Fear &amp; Phobias</h4><p style="color:rgba(255,255,255,.7)">Toxins, heavy metals, DNA alteration, immune overload</p></div>
+<div class="rg-i" style="border-color:var(--warm);background:rgba(255,255,255,.08)"><h4 style="color:#FBD38D">Distorted Risk</h4><p style="color:rgba(255,255,255,.7)">Vaccination riskier than disease, unnecessary</p></div>
+<div class="rg-i" style="border-color:#9F7AEA;background:rgba(255,255,255,.08)"><h4 style="color:#D6BCFA">Religious Concerns</h4><p style="color:rgba(255,255,255,.7)">Prohibited materials, against natural/divine order</p></div>
+<div class="rg-i" style="border-color:var(--teal);background:rgba(255,255,255,.08)"><h4 style="color:#81E6D9">Worldview</h4><p style="color:rgba(255,255,255,.7)">Naturalistic thinking, civil liberties</p></div>
+<div class="rg-i" style="border-color:var(--lt);background:rgba(255,255,255,.08)"><h4 style="color:#90CDF4">Epistemic Relativism</h4><p style="color:rgba(255,255,255,.7)">"Mother knows best," alternative health</p></div>
+<div class="rg-i" style="border-color:#FC8181;background:rgba(255,255,255,.08)"><h4 style="color:#FEB2B2">Distrust</h4><p style="color:rgba(255,255,255,.7)">Experimental, biased data, authorities overreacting</p></div>
+<div class="rg-i" style="border-color:#F6AD55;background:rgba(255,255,255,.08)"><h4 style="color:#FBD38D">Unwarranted Beliefs</h4><p style="color:rgba(255,255,255,.7)">Implausible side effects, natural remedies better</p></div>
+<div class="rg-i" style="border-color:#68D391;background:rgba(255,255,255,.08)"><h4 style="color:#9AE6B4">Reactance</h4><p style="color:rgba(255,255,255,.7)">Refusal as empowered choice, anti-paternalism</p></div>
+</div>
+<div class="ref" style="opacity:.35">Adapted from JITSUVAX (Lewandowsky et al.) · Nyhan et al. Pediatrics. 2014;133(4)</div>
+</div>
+
+<!-- 16: ERI -->
+<div class="s bg-l" data-i="15">
+<div class="lb">Communication Framework</div>
+<div class="ti-s">Empathetic Refutational Interview (ERI)</div>
+<div class="bd">Outperformed motivational interviewing for shifting vaccine attitudes (Holford et al. 2025, npj Vaccines).</div>
+<div class="eri">
+<div class="er"><div class="en" style="background:var(--blue)">1</div><div><div class="eh">Elicit</div><div class="ed">Identify the attitude root. Open-ended questions + active listening.</div><div class="ee">"Do you mind sharing your thoughts on vitamin K?"</div></div></div>
+<div class="er"><div class="en" style="background:var(--teal)">2</div><div><div class="eh">Affirm</div><div class="ed">Build trust through empathy. Acknowledge the legitimacy of the underlying motivation. Skip this and the rest fails.</div><div class="ee">"That makes complete sense — that's good parenting."</div></div></div>
+<div class="er"><div class="en" style="background:var(--warm)">3</div><div><div class="eh">Correct</div><div class="ed">Replace the misconception. Tailored refutation that respects the attitude root.</div><div class="ee">"Vitamin K isn't a chemical — it's a natural vitamin your baby needs but can't yet make enough of."</div></div></div>
+<div class="er"><div class="en" style="background:var(--dk)">4</div><div><div class="eh">Inform</div><div class="ed">Facts at the right moment. Only after trust + correction. Delivered too early, facts bounce off.</div><div class="ee">The incidence data, the risk of ICH, the 81× relative risk.</div></div></div>
+</div>
+<div class="ref">jitsuvaxtraining.com · Holford D et al. npj Vaccines. 2025</div>
+</div>
+
+<!-- 17: CLAIMS TABLE 1/2 -->
+<div class="s bg-w" data-i="16">
+<div class="lb">Practical Application</div>
+<div class="ti-s">Claims → Attitude Roots → Response (1/2)</div>
+<table class="tb">
+<thead><tr><th>What they say</th><th>Root</th><th>Affirm</th><th>Correct + Inform</th></tr></thead>
+<tbody>
+<tr><td>"Synthetic ingredients" · "Metals" · "Acid &amp; aluminium"</td><td><span class="tg tg-r">Fear</span></td><td style="font-style:italic;color:var(--teal)">"Wanting to know what's in the injection is completely reasonable."</td><td>"The UK version doesn't contain those. Those are in the American product. Ours contains bile salt, soya lecithin, and water."</td></tr>
+<tr><td>"Mercury" · "Linked to ASD" · "Confused with vaccines"</td><td><span class="tg tg-w">Unwarranted Beliefs</span></td><td style="font-style:italic;color:var(--teal)">"I understand the confusion — it's given by injection on day one, so it feels like a vaccine."</td><td>"Vitamin K isn't a vaccine. No thimerosal, no mercury, no link to autism. It's a vitamin for blood clotting."</td></tr>
+<tr><td>"Unnatural" · "Delayed cord clamping for 5 mins so no need"</td><td><span class="tg tg-w">Worldview</span></td><td style="font-style:italic;color:var(--teal)">"Wanting a natural birth experience is completely understandable, and we support that."</td><td>"DCC is great for iron, we recommend it too. But vitamin K doesn't cross the placenta, so cord blood doesn't contain it."</td></tr>
+<tr><td>"Can cause leukaemia" · "Watched videos on side effects"</td><td><span class="tg tg-r">Fear</span></td><td style="font-style:italic;color:var(--teal)">"That claim comes from a real study, so I can see why it's concerning."</td><td>"The 1992 study had major methodological problems. Every follow-up, including one with 1.3 million babies, found no link."</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 18: CLAIMS TABLE 2/2 -->
+<div class="s bg-w" data-i="17">
+<div class="lb">Practical Application</div>
+<div class="ti-s">Claims → Attitude Roots → Response (2/2)</div>
+<table class="tb">
+<thead><tr><th>What they say</th><th>Root</th><th>Affirm</th><th>Correct + Inform</th></tr></thead>
+<tbody>
+<tr><td>"Thickens blood" · "Issues with stem cells"</td><td><span class="tg tg-r">Fear</span></td><td style="font-style:italic;color:var(--teal)">"I can see why that sounds alarming. You want your baby's development undisturbed."</td><td>"Vitamin K enables clotting factors but doesn't change blood viscosity. The stem cell claim is from an unrelated adult mouse study."</td></tr>
+<tr><td>"It is not halal"</td><td><span class="tg tg-p">Religious</span></td><td style="font-style:italic;color:var(--teal)">"Your faith is important and I completely respect that."</td><td>"The UK vitamin K uses no animal products. Synthetic glycocholic acid, phytomenadione and soya lecithin. You may wish to consult your imam."</td></tr>
+<tr><td>"Not willing to give injections unnecessarily" · "Baby in pain"</td><td><span class="tg tg-bl">Epistemic</span></td><td style="font-style:italic;color:var(--teal)">"You're the parent and this is absolutely your decision."</td><td>"We can give it during a feed or skin-to-skin. Sucrose or breastfeeding during administration mitigates pain. We also offer oral drops."</td></tr>
+<tr><td>"Previous child was fine" · "Formula-fed so no need"</td><td><span class="tg tg-k">Risk Perception</span></td><td style="font-style:italic;color:var(--teal)">"Your child being healthy is wonderful — most babies without vitamin K are fine."</td><td>"VKDB is rare but causes brain haemorrhage with 20% mortality. We can't predict which baby. Formula helps but the injection covers the first days."</td></tr>
+</tbody>
+</table>
+<div class="bd" style="color:var(--warm);font-weight:600;margin-top:1.5vh;font-size:clamp(11px,1.1vw,15px)">Each response starts with affirmation before correction. This sequence is not optional — it's what makes ERI work.</div>
+</div>
+
+<!-- 19: WHEN IT DOESN'T WORK -->
+<div class="s bg-d" data-i="18">
+<div class="lb">Practical Guidance</div>
+<div class="ti-s">When the Conversation Doesn't Change Their Mind</div>
+<div class="bd">Not every conversation will result in acceptance. That is not a failure. Research shows that having the conversation does not entrench refusal — you haven't made things worse.</div>
+<div class="wc" style="margin-top:3vh">
+<div class="wc-i"><div class="wc-n" style="color:var(--lt)">Offer oral alternative</div><div class="wc-d">Oral Konakion MM keeps the baby partially protected. Explain limitations honestly — it's far better than nothing.</div></div>
+<div class="wc-i"><div class="wc-n" style="color:var(--lt)">Document thoroughly</div><div class="wc-d">Record what was discussed, offered (IM and oral), declined, and that risks including ICH and death were explained.</div></div>
+<div class="wc-i"><div class="wc-n" style="color:var(--lt)">Leave the door open</div><div class="wc-d">"I respect your decision. The offer is always open. If you change your mind, just let us know."</div></div>
+<div class="wc-i"><div class="wc-n" style="color:var(--lt)">Look after yourself</div><div class="wc-d">These conversations are emotionally taxing. Debrief with colleagues.</div></div>
+</div>
+</div>
+
+<!-- 20: KEY TAKEAWAYS -->
+<div class="s bg-b" data-i="19">
+<div class="lb">Summary</div>
+<div class="ti">Key Takeaways</div>
+<ul class="cn">
+<li>83% encounter vitamin K refusal at least monthly; 50% have felt unable to adequately respond</li>
+<li>The UK uses Konakion MM — no benzyl alcohol, no polysorbate 80, no black box warning. Most online concerns are about US products</li>
+<li>The cancer link (Golding 1992) has been thoroughly refuted by every major follow-up study</li>
+<li>IM is gold standard. Oral is a reasonable alternative if IM is declined</li>
+<li>Facts alone don't work — identify the attitude root and use ERI</li>
+<li>Parents have the right to refuse. Your job: inform clearly, offer alternatives, document, leave the door open</li>
+</ul>
+</div>
+
+<!-- 21: REFERENCES -->
+<div class="s bg-d" data-i="20">
+<div class="lb">References</div>
+<div class="ti-s">Further Reading</div>
+<div class="bd sm" style="opacity:.6;line-height:2.1;max-width:100%">
+1. Golding J et al. BMJ. 1992;305:341-6<br>
+2. Roman E et al. Br J Cancer. 2002;86:63-9<br>
+3. Fear NT et al. Br J Cancer. 2003;89:1228-31<br>
+4. Ekelund H et al. BMJ. 1993;307:89-91<br>
+5. Klebanoff MA et al. NEJM. 1993;329:905-8<br>
+6. Pereira SP et al. Pharmacoepidemiol Drug Saf. 1998;7:173-82<br>
+7. Hand I et al. Pediatrics. 2022;149(3):e2021056036<br>
+8. Konakion MM Paediatric SmPC. medicines.org.uk/emc/product/9754/smpc<br>
+9. Laubscher B et al. Eur J Pediatr. 2013;172:357-60<br>
+10. Tripp JH &amp; McNinch AW. Arch Dis Child. 2007;92:F759-66<br>
+11. Holford D et al. npj Vaccines. 2025<br>
+12. Lewandowsky S et al. JITSUVAX. jitsuvax.info<br>
+13. Nyhan B et al. Pediatrics. 2014;133(4):e835-42<br>
+14. Marcewicz LH et al. Hosp Pediatr. 2017;7(7):400-406<br>
+15. Shearer MJ. Blood Rev. 2009;23(2):49-59<br>
+16. CDC. cdc.gov/vitamin-k-deficiency/hcp/fact-sheet (updated 2025)
+</div>
+<div class="sm" style="margin-top:3vh">Muhammad Mamun · Supervisor: Dr Victoria Nesbitt · Paediatric Department · Ormskirk District General Hospital · Mersey and West Lancashire Teaching Hospitals NHS Trust</div>
+</div>
+
+</div>
+
+<div class="nav">
+<button id="pv" aria-label="Previous">‹</button>
+<span class="ctr" id="ctr">1 / 21</span>
+<button id="nx" aria-label="Next">›</button>
+</div>
+
+<script>
+const sl=document.querySelectorAll('.s'),N=sl.length;let c=0;
+function go(n){if(n<0||n>=N)return;sl[c].classList.remove('on');sl[c].classList.add('out');
+const o=c;c=n;sl[c].classList.add('on');setTimeout(()=>sl[o].classList.remove('out'),450);
+document.getElementById('ctr').textContent=`${c+1} / ${N}`;
+document.getElementById('pv').disabled=c===0;document.getElementById('nx').disabled=c===N-1;
+document.getElementById('prg').style.width=`${((c+1)/N)*100}%`;sl[c].scrollTop=0}
+document.getElementById('pv').onclick=()=>go(c-1);
+document.getElementById('nx').onclick=()=>go(c+1);
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(c+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(c-1)}});
+let tx=0;document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+document.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(d<-50)go(c+1);if(d>50)go(c-1)});
+go(0);
+</script>
+</body>
+</html>
